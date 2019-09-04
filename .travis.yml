@@ -10,7 +10,7 @@ before_install:
   - sudo apt update -y
   - sudo apt install java-package -y
   - wget http://dl.bintray.com/walkingdevs/mirrors/jdk-8.211-x64.tar.gz
-  - sudo make-jpkg jdk-8.211-x64.tar.gz
+  - fakeroot make-jpkg jdk-8.211-x64.tar.gz
   - sudo apt install ./*deb -y
   - chmod a+x gradlew
   - ./gradlew clean
