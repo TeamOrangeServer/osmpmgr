@@ -1,0 +1,16 @@
+[
+{
+  "modid": "osmpmgr",
+  "name": "Orange Server ModPack Manager",
+  "description": "server admin tools add",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://akirin.xyz",
+  "updateUrl": "",
+  "authorList": ["aki"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
