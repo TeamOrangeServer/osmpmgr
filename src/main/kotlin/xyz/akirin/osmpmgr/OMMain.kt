@@ -20,8 +20,6 @@ import xyz.akirin.osmpmgr.items.ItemFgWEWand
 @Mod(modid = OMMain.ID, name = OMMain.Name, version = OMMain.Version, modLanguage = OMMain.Lang)
 class OMMain {
 
-    //    public static CreativeTabs tabOMSPMgr = new OMct("OMSPMgrtab");
-
     @Mod.EventHandler
     //この関数でMODファイル自体をイベントの発火先にする。
     fun construct(event: FMLConstructionEvent) {
@@ -52,7 +50,6 @@ class OMMain {
 
         val BkWEWand: Item = ItemBkWEWand()
         val FgWEWand: Item = ItemFgWEWand()
-//        val OMTab = OMTab()
 
     }
 }
