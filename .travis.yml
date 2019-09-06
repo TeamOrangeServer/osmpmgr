@@ -1,21 +1,22 @@
 sudo: required
 language: java
-#jdk: openjdk8
+jdk: openjdk8
 branches:
   except:
     - /^b[0-9]/
 env:
   - GRADLE_OPTS="-Dorg.gradle.daemon=false"
 before_install:
-  - sudo apt update -y
-  - sudo apt install java-package -y
-  - wget http://dl.bintray.com/walkingdevs/mirrors/jdk-8.211-x64.tar.gz
-  - fakeroot make-jpkg jdk-8.211-x64.tar.gz
-  - echo "Debug" && ls -laX
-  - sudo apt install ./jdk-8.211*.deb -y
+#  - sudo apt update -y
+#  - sudo apt install java-package -y
+#  - wget http://dl.bintray.com/walkingdevs/mirrors/jdk-8.211-x64.tar.gz
+#  - fakeroot make-jpkg jdk-8.211-x64.tar.gz
+#  - echo "Debug" && ls -laX
+#  - sudo apt install ./jdk-8.211*.deb -y
   - chmod a+x gradlew
   - ./gradlew clean
-install: "./gradlew setupCIWorkspace --continue"
+install: "./gradlew setupDecompWorkspace --continue"
+#install: "./gradlew setupCIWorkspace --continue"
 script: "./gradlew build --continue"
 #after_success:
   #- ./gradlew githubRelease --continue
