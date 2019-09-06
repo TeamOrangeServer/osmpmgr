@@ -19,7 +19,8 @@ cache:
 install:
   stage: install
   script:
-    - bash gradlew setupCiWorkSpace
+    - bash gradlew setupDecompWorkspace
+#    - bash gradlew setupCiWorkSpace
 
 build:
   stage: build
