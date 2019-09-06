@@ -4,7 +4,7 @@ stages:
   - install
   - build
   - test
-#  - deploy
+  - deploy
 
 before_script:
   #  - echo `pwd` # debug
@@ -38,9 +38,10 @@ test:
   script:
     - bash gradlew check
 
-#deploy:
-#  stage: deploy
-#  script:
+deploy:
+  stage: deploy
+  script:
+    - echo "coming soon"
 #    - ./deploy
 
 after_script:
