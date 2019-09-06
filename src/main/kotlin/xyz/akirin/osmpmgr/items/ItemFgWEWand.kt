@@ -14,5 +14,4 @@ class ItemFgWEWand : Item() {
         this.unlocalizedName = /*OMMain.ID + ":" + */"item_fgwand"
         this.setMaxStackSize(1)
     }
-
 }

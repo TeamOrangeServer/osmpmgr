@@ -14,5 +14,4 @@ class ItemBkWEWand : Item() {
         this.unlocalizedName = /*OMMain.ID + ":" + */"item_bkwand"
         this.setMaxStackSize(1)
     }
-
 }

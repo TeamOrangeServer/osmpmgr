@@ -45,7 +45,7 @@ class OMMain {
 
         const val ID = "osmpmgr"
         internal const val Name = "Orange Server ModPack Manager"
-        internal const val Version = "code-1.0.0-beta"
+        internal const val Version = "code-1.0.1-beta"
         internal const val Lang = "kotlin"
 
         val BkWEWand: Item = ItemBkWEWand()
